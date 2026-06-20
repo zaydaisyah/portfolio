@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahidah Aisyah | Information Systems Student</title>
+    <meta name="description"
+        content="Portfolio of Zahidah Aisyah — Information Systems student at UiTM with CGPA 3.88, skilled in full-stack web development, UI/UX design, and database management.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <!-- WhatsApp Banner -->
+    <div id="whatsapp-banner" class="whatsapp-banner">
+        <a href="https://wa.me/60199619377" target="_blank" class="banner-link">
+            Contact me via WhatsApp <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+        <button id="close-banner-btn" class="close-banner-btn" aria-label="Close banner">&times;</button>
+    </div>
+
+    <!-- ── Navigation ── -->
+    <header>
+        <nav id="navbar">
+            <div class="nav-container">
+                <div class="nav-identity">
+                    <span class="nav-name">Zahidah</span>
+                    <span class="nav-role">IS Student</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ── Hero ── -->
+        <section id="hero" class="hero">
+            <div class="hero-content centered">
+                <div class="avatar-circle stagger-reveal">
+                    <img src="img/profile.jpg" alt="Zahidah Aisyah">
+                </div>
+                <h1 class="stagger-reveal">Hi, I'm <span class="accent-text">Zahidah Aisyah</span></h1>
+                <p class="hero-sub stagger-reveal">Information System Student · UiTM · CGPA 3.88</p>
+                <p class="hero-desc stagger-reveal">A motivated and results-driven individual passionate about
+                    building practical, user-friendly digital solutions through strong technical skills and
+                    consistent academic excellence.</p>
+                <div class="cta-btns stagger-reveal">
+                    <a href="Zahidah_Aisyah_CV.pdf" target="_blank" class="btn primary">
+                        <i class="fas fa-file-pdf"></i> Download CV
+                    </a>
+                    <a href="#skills" class="btn secondary">View My Skills</a>
+                    <a href="#contact" class="btn secondary">Get In Touch</a>
+                </div>
+                <div class="hero-socials stagger-reveal">
+                    <a href="https://github.com/zaydaisyah" target="_blank" class="social-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/zahidah-aisyah-1006b7270" target="_blank" class="social-btn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:zaydaisyah04@gmail.com" class="social-btn">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── About ── -->
+        <section id="about" class="about">
+            <div class="section-header reveal">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <p class="section-subtitle reveal">A little bit about who I am</p>
+
+            <div class="about-card reveal">
+                <p>Motivated and results-driven Information Systems student at Universiti Teknologi MARA (UiTM) with
+                    a CGPA of 3.88 and consistent Dean's List recognition. Skilled in system analysis, database design,
+                    UI/UX principles, and full-stack web development through academic and hands-on projects. Proficient
+                    in technologies including HTML, CSS, PHP, Laravel, SQL/MySQL, Bootstrap, and Power BI, with
+                    experience in data visualization, CRUD operations, and database normalization. Recognized for strong
+                    leadership and organizational abilities in managing student activities with confidence and responsibility.
+                    Passionate about developing practical and user-friendly digital solutions while continuously enhancing
+                    technical and problem-solving skills. Available for internship placement from 1 September 2026 until
+                    12 February 2027.</p>
+                <div class="about-info-grid">
+                    <div class="about-info-item accent-border">
+                        <span class="about-info-label">Availability</span>
+                        <span class="about-info-value">1 Sept 2026 – 12 Feb 2027</span>
+                    </div>
+                    <div class="about-info-item">
+                        <span class="about-info-label">Location</span>
+                        <span class="about-info-value">Shah Alam, Selangor</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Skills ── -->
+        <section id="skills" class="skills">
+            <div class="section-header reveal">
+                <h2>Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <p class="section-subtitle reveal">Technologies and tools I frequently use</p>
+
+            <div class="skills-wrapper reveal">
+                <!-- Filter Tabs -->
+                <div class="filter-tabs-row" id="skills-filter">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="languages">Languages</button>
+                    <button class="filter-tab" data-filter="professional">Professional Skills</button>
+                    <button class="filter-tab" data-filter="technical">Technical Skills</button>
+                    <button class="filter-tab" data-filter="tools">Software & Tools</button>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-card-grid" id="skills-grid">
+
+                    <!-- Languages -->
+                    <div class="skill-item" data-category="languages">
+                        <div class="skill-icon-box"><i class="fas fa-language" style="color:#818cf8"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Melayu</span>
+                            <span class="skill-type">Fluent</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="languages">
+                        <div class="skill-icon-box"><i class="fas fa-globe" style="color:#818cf8"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">English</span>
+                            <span class="skill-type">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="languages">
+                        <div class="skill-icon-box"><i class="fas fa-comment-dots" style="color:#818cf8"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Arab</span>
+                            <span class="skill-type">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <!-- Professional Skills -->
+                    <div class="skill-item" data-category="professional">
+                        <div class="skill-icon-box"><i class="fas fa-book" style="color:#818cf8"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">System Analysis & Doc.</span>
+                            <span class="skill-type">System Development</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="professional">
+                        <div class="skill-icon-box"><i class="fas fa-pen-ruler" style="color:#818cf8"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">UI/UX Design Principles</span>
+                            <span class="skill-type">Design Principles</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="professional">
+                        <div class="skill-icon-box"><i class="fas fa-chart-pie" style="color:#818cf8"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Data Visualization</span>
+                            <span class="skill-type">Analytics</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="professional">
+                        <div class="skill-icon-box"><i class="fas fa-check-double" style="color:#4ade80"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Database Design & Normalisation</span>
+                            <span class="skill-type">Data Integrity & Design</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="professional">
+                        <div class="skill-icon-box"><i class="fas fa-arrows-rotate" style="color:#888888"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Record Management (CRUD)</span>
+                            <span class="skill-type">Database Operations</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="professional">
+                        <div class="skill-icon-box"><i class="fas fa-shield-halved" style="color:#4ade80"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Data Validation</span>
+                            <span class="skill-type">Data Integrity</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="professional">
+                        <div class="skill-icon-box"><i class="fas fa-sort" style="color:#888888"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Search & Sort Algorithms</span>
+                            <span class="skill-type">Algorithms</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="professional">
+                        <div class="skill-icon-box"><i class="fas fa-file-export" style="color:#818cf8"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">File Input & Output</span>
+                            <span class="skill-type">System Development</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="professional">
+                        <div class="skill-icon-box"><i class="fas fa-laptop-code" style="color:#818cf8"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Front-End & Back-End Dev.</span>
+                            <span class="skill-type">Web Development</span>
+                        </div>
+                    </div>
+
+                    <!-- Technical Skills -->
+                    <div class="skill-item" data-category="technical">
+                        <div class="skill-icon-box"><i class="fas fa-code" style="color:#00599c"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">C++</span>
+                            <span class="skill-type">Programming Language</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="technical">
+                        <div class="skill-icon-box"><i class="fab fa-js" style="color:#f7df1e"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-type">Beginner</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="technical">
+                        <div class="skill-icon-box"><i class="fab fa-html5" style="color:#e34f26"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">HTML, CSS</span>
+                            <span class="skill-type">Web Markup & Styling</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="technical">
+                        <div class="skill-icon-box"><i class="fas fa-database" style="color:#00758f"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">SQL & MySQL Queries</span>
+                            <span class="skill-type">Query Language</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="technical">
+                        <div class="skill-icon-box"><i class="fab fa-php" style="color:#777bb4"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">PHP</span>
+                            <span class="skill-type">Server-side Language</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="technical">
+                        <div class="skill-icon-box"><i class="fab fa-laravel" style="color:#ff2d20"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Laravel</span>
+                            <span class="skill-type">PHP Framework</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="technical">
+                        <div class="skill-icon-box"><i class="fas fa-file-code" style="color:#f4a620"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">XML & XSL</span>
+                            <span class="skill-type">Basic</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="technical">
+                        <div class="skill-icon-box"><i class="fab fa-bootstrap" style="color:#7952b3"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Bootstrap</span>
+                            <span class="skill-type">CSS Framework</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="technical">
+                        <div class="skill-icon-box"><i class="fas fa-globe" style="color:#818cf8"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Basic Web Development</span>
+                            <span class="skill-type">Web Development</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="technical">
+                        <div class="skill-icon-box"><i class="fas fa-diagram-project" style="color:#818cf8"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Entity Relationship Diagram (ERD)</span>
+                            <span class="skill-type">Database Design</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="technical">
+                        <div class="skill-icon-box"><i class="fas fa-server" style="color:#d22128"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Apache</span>
+                            <span class="skill-type">Web Server</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="technical">
+                        <div class="skill-icon-box"><i class="fas fa-shield" style="color:#f6821f"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Cloudflare</span>
+                            <span class="skill-type">CDN & DNS Management</span>
+                        </div>
+                    </div>
+
+                    <!-- Software & Tools -->
+                    <div class="skill-item" data-category="tools">
+                        <div class="skill-icon-box"><i class="fab fa-microsoft" style="color:#00a1f1"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">MS Word, Excel, PowerPoint</span>
+                            <span class="skill-type">Office Suite</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="tools">
+                        <div class="skill-icon-box"><i class="fas fa-chart-bar" style="color:#f2c811"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Power BI</span>
+                            <span class="skill-type">Data Visualization</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="tools">
+                        <div class="skill-icon-box"><i class="fab fa-figma" style="color:#a259ff"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-type">UI Design Tool</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="tools">
+                        <div class="skill-icon-box"><i class="fas fa-database" style="color:#f29111"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">phpMyAdmin</span>
+                            <span class="skill-type">DB Management</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="tools">
+                        <div class="skill-icon-box"><i class="fab fa-google" style="color:#4285f4"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Google Developer Tools</span>
+                            <span class="skill-type">Dev Tools</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="tools">
+                        <div class="skill-icon-box"><i class="fas fa-server" style="color:#fb923c"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">XAMPP</span>
+                            <span class="skill-type">Local Server</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="tools">
+                        <div class="skill-icon-box"><i class="fas fa-server" style="color:#007acc"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Laragon</span>
+                            <span class="skill-type">Local Server</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="tools">
+                        <div class="skill-icon-box"><i class="fas fa-code" style="color:#007acc"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Visual Studio Code (VSC)</span>
+                            <span class="skill-type">Code Editor</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="tools">
+                        <div class="skill-icon-box"><i class="fas fa-file-code" style="color:#ff9800"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Sublime Text</span>
+                            <span class="skill-type">Code Editor</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="tools">
+                        <div class="skill-icon-box"><i class="fas fa-code" style="color:#00599c"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Dev-C++</span>
+                            <span class="skill-type">IDE</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="tools">
+                        <div class="skill-icon-box"><i class="fas fa-infinity" style="color:#818cf8"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">DevOps</span>
+                            <span class="skill-type">Development Practices</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-category="tools">
+                        <div class="skill-icon-box"><i class="fas fa-wand-magic-sparkles" style="color:#818cf8"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">Antigravity</span>
+                            <span class="skill-type">AI Coding Assistant</span>
+                        </div>
+                    </div>
+
+                </div><!-- /skills-card-grid -->
+
+                <button class="show-all-btn" id="show-all-skills">
+                    <span id="show-all-label">Show All</span>
+                    <span id="skills-remaining-count"></span>
+                    <i class="fas fa-chevron-down" id="show-all-icon"></i>
+                </button>
+
+            </div><!-- /skills-wrapper -->
+        </section>
+
+        <!-- ── Projects ── -->
+        <section id="projects" class="projects">
+            <div class="section-header reveal">
+                <h2>Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <p class="section-subtitle reveal">Selected work and academic projects</p>
+
+            <!-- Projects Controls (Filters + Search Bar) -->
+            <div class="projects-controls reveal">
+                <div class="projects-filter-row" id="projects-filter">
+                    <button class="proj-filter-tab active" data-filter="all">All <span class="proj-count">7</span></button>
+                    <button class="proj-filter-tab" data-filter="web">Web <span class="proj-count">4</span></button>
+                    <button class="proj-filter-tab" data-filter="frontend">Frontend & Design <span class="proj-count">2</span></button>
+                    <button class="proj-filter-tab" data-filter="fullstack">Full-stack <span class="proj-count">4</span></button>
+                    <button class="proj-filter-tab" data-filter="academic">Academic <span class="proj-count">2</span></button>
+                </div>
+
+                <div class="project-search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="project-search-input" placeholder="Search project name...">
+                </div>
+            </div>
+
+            <!-- Project Cards -->
+            <div class="projects-list" id="projects-list">
+
+                <!-- Project 1 -->
+                <div class="project-featured-card reveal" data-category="web fullstack academic" data-name="e-leave and travel warrant system for ferrari malaysia fyp hr management system">
+                    <div class="project-card-info">
+                        <div>
+                            <div class="project-title-row">
+                                <h3>E-Leave & Travel Warrant System (Ferrari Malaysia)</h3>
+                                <a href="https://github.com/zaydaisyah" target="_blank" class="project-arrow-btn"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                                <span class="project-category-badge">Academic</span>
+                            </div>
+                            <p class="project-card-desc">Final Year Project (FYP) — HR Management System. Features include leave applications, travel warrant tracking, and manager approvals.</p>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-pill">PHP</span>
+                            <span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">Figma</span>
+                            <span class="tech-pill">XAMPP</span>
+                            <span class="tech-pill">User Testing</span>
+                        </div>
+                    </div>
+                    <div class="project-card-preview">
+                        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=800" alt="E-Leave and Travel Warrant System">
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-featured-card reveal" data-category="web fullstack" data-name="gofit system gamification gym management system development">
+                    <div class="project-card-info">
+                        <div>
+                            <div class="project-title-row">
+                                <h3>GoFit System</h3>
+                                <a href="https://github.com/zaydaisyah" target="_blank" class="project-arrow-btn"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                                <span class="project-category-badge">Full-stack</span>
+                            </div>
+                            <p class="project-card-desc">Gamification Gym Management System — System Development. Encourages user engagement through rewards, workout tracking, and leaderboard systems.</p>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-pill">PHP</span>
+                            <span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">Figma</span>
+                            <span class="tech-pill">XAMPP</span>
+                        </div>
+                    </div>
+                    <div class="project-card-preview">
+                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=800" alt="GoFit System">
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-featured-card reveal" data-category="web fullstack" data-name="tk by tyra inventory system management development">
+                    <div class="project-card-info">
+                        <div>
+                            <div class="project-title-row">
+                                <h3>TK By Tyra Inventory System</h3>
+                                <a href="https://github.com/zaydaisyah" target="_blank" class="project-arrow-btn"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                                <span class="project-category-badge">Full-stack</span>
+                            </div>
+                            <p class="project-card-desc">Inventory Management System — System Development. Provides real-time stock levels, stock movement logs, and sales report visualization.</p>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-pill">PHP</span>
+                            <span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">XAMPP</span>
+                            <span class="tech-pill">VS Code</span>
+                        </div>
+                    </div>
+                    <div class="project-card-preview">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800" alt="TK By Tyra Inventory System">
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-featured-card reveal" data-category="frontend" data-name="taylor university walk ui/ux design prototype smart campus navigation system">
+                    <div class="project-card-info">
+                        <div>
+                            <div class="project-title-row">
+                                <h3>Taylor University Walk</h3>
+                                <a href="https://github.com/zaydaisyah" target="_blank" class="project-arrow-btn"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                                <span class="project-category-badge">UI/UX</span>
+                            </div>
+                            <p class="project-card-desc">UI/UX Design Prototype — Smart Campus Navigation System. Designed to guide visitors and students across campus grounds with intuitive interactive maps.</p>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-pill">Figma</span>
+                            <span class="tech-pill">Canva</span>
+                            <span class="tech-pill">User Testing</span>
+                            <span class="tech-pill">Prototyping</span>
+                        </div>
+                    </div>
+                    <div class="project-card-preview">
+                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=800" alt="Taylor University Walk">
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-featured-card reveal" data-category="academic" data-name="gofit system proposal project management system analysis">
+                    <div class="project-card-info">
+                        <div>
+                            <div class="project-title-row">
+                                <h3>GoFit System Proposal</h3>
+                                <a href="https://github.com/zaydaisyah" target="_blank" class="project-arrow-btn"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                                <span class="project-category-badge">Academic</span>
+                            </div>
+                            <p class="project-card-desc">Project Management & System Analysis. Features detailed requirement analysis, workflow planning (DFDs & ERDs), and comprehensive system documentation.</p>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-pill">System Analysis</span>
+                            <span class="tech-pill">Documentation</span>
+                            <span class="tech-pill">Canva</span>
+                            <span class="tech-pill">Draw.io</span>
+                        </div>
+                    </div>
+                    <div class="project-card-preview">
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800" alt="GoFit System Proposal">
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-featured-card reveal" data-category="frontend" data-name="travel data analytics visualization project power bi excel">
+                    <div class="project-card-info">
+                        <div>
+                            <div class="project-title-row">
+                                <h3>Travel Data Analytics</h3>
+                                <a href="https://github.com/zaydaisyah" target="_blank" class="project-arrow-btn"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                                <span class="project-category-badge">Analytics</span>
+                            </div>
+                            <p class="project-card-desc">Data Analytics & Visualization Project. Focuses on processing CSV datasets, cleaning data, and creating interactive visualization dashboards.</p>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-pill">Power BI</span>
+                            <span class="tech-pill">Excel</span>
+                            <span class="tech-pill">Data Cleaning</span>
+                            <span class="tech-pill">CSV Processing</span>
+                        </div>
+                    </div>
+                    <div class="project-card-preview">
+                        <img src="img/travel_dashboard.png" alt="Travel Data Analytics">
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-featured-card reveal" data-category="web fullstack" data-name="restaurant reservation system database management system project mysql sql">
+                    <div class="project-card-info">
+                        <div>
+                            <div class="project-title-row">
+                                <h3>Restaurant Reservation System</h3>
+                                <a href="https://github.com/zaydaisyah" target="_blank" class="project-arrow-btn"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                                <span class="project-category-badge">Database</span>
+                            </div>
+                            <p class="project-card-desc">Database Management System Project. Focuses on relational database design, query optimization, and booking status controls.</p>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">phpMyAdmin</span>
+                            <span class="tech-pill">XAMPP</span>
+                            <span class="tech-pill">SQL Queries</span>
+                        </div>
+                    </div>
+                    <div class="project-card-preview">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800" alt="Restaurant Reservation System">
+                    </div>
+                </div>
+
+            </div><!-- /projects-list -->
+
+            <div class="no-results" id="no-results">
+                <i class="fas fa-search" style="font-size:2rem; margin-bottom:12px; opacity:0.3;"></i>
+                <p>No projects found matching your search.</p>
+            </div>
+
+        </section>
+
+        <!-- ── Certificates ── -->
+        <section id="certificates" class="certificates">
+            <div class="section-header reveal">
+                <h2>My Certificates</h2>
+                <div class="section-line"></div>
+            </div>
+            <p class="section-subtitle reveal">Professional certifications and licences</p>
+
+            <div class="cert-grid">
+
+                <!-- Cert 1 -->
+                <div class="cert-card reveal">
+                    <div class="cert-card-top">
+                        <div class="cert-icon-wrap"><i class="fas fa-shield-halved"></i></div>
+                        <span class="cert-category-badge cybersecurity">Cybersecurity</span>
+                    </div>
+                    <div class="cert-card-body">
+                        <h3 class="cert-title">Cybersecurity Foundation Professional Certification</h3>
+                        <p class="cert-issuer"><i class="fas fa-building-columns"></i> Professional Certification Body</p>
+                        <div class="cert-tags">
+                            <span class="cert-tag">Cybersecurity</span>
+                            <span class="cert-tag">Networking</span>
+                            <span class="cert-tag">Security</span>
+                        </div>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar"></i> 2026</span>
+                            <span class="cert-status in-progress"><i class="fas fa-spinner"></i> In Progress</span>
+                        </div>
+                        <button class="cert-pdf-btn" disabled>
+                            <i class="fas fa-file-pdf"></i> View PDF Certificate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card reveal">
+                    <div class="cert-card-top">
+                        <div class="cert-icon-wrap"><i class="fas fa-robot"></i></div>
+                        <span class="cert-category-badge ai">AI</span>
+                    </div>
+                    <div class="cert-card-body">
+                        <h3 class="cert-title">AI for Career Readiness Professional Certification</h3>
+                        <p class="cert-issuer"><i class="fas fa-building-columns"></i> Professional Certification Body</p>
+                        <div class="cert-tags">
+                            <span class="cert-tag">Artificial Intelligence</span>
+                            <span class="cert-tag">Career</span>
+                        </div>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar"></i> 2026</span>
+                            <span class="cert-status in-progress"><i class="fas fa-spinner"></i> In Progress</span>
+                        </div>
+                        <button class="cert-pdf-btn" disabled>
+                            <i class="fas fa-file-pdf"></i> View PDF Certificate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card reveal">
+                    <div class="cert-card-top">
+                        <div class="cert-icon-wrap"><i class="fab fa-google"></i></div>
+                        <span class="cert-category-badge tools">Tools</span>
+                    </div>
+                    <div class="cert-card-body">
+                        <h3 class="cert-title">NotebookLM Licence</h3>
+                        <p class="cert-issuer"><i class="fas fa-building-columns"></i> Google</p>
+                        <div class="cert-tags">
+                            <span class="cert-tag">AI Tools</span>
+                            <span class="cert-tag">Google</span>
+                            <span class="cert-tag">Productivity</span>
+                        </div>
+                        <div class="cert-meta">
+                            <span class="cert-date"><i class="fas fa-calendar"></i> 2026</span>
+                            <span class="cert-status completed"><i class="fas fa-circle-check"></i> Completed</span>
+                        </div>
+                        <button class="cert-pdf-btn">
+                            <i class="fas fa-file-pdf"></i> View PDF Certificate
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── Contact ── -->
+        <section id="contact" class="contact">
+            <div class="contact-inner">
+                <!-- Left Column -->
+                <div class="contact-left">
+                    <div class="section-header reveal">
+                        <h2>Get In Touch</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <p class="contact-tagline reveal">Have a project in mind or just want to say hi?<br>Feel free to reach out!</p>
+
+                    <div class="contact-info-list reveal">
+                        <a href="mailto:zaydaisyah04@gmail.com" class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                            <span>zaydaisyah04@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/zaydaisyah" target="_blank" class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fab fa-github"></i></div>
+                            <span>zaydaisyah</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zahidah-aisyah-1006b7270" target="_blank" class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fab fa-linkedin"></i></div>
+                            <span>Zahidah Aisyah</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Form -->
+                <div class="contact-right reveal">
+                    <form id="contact-form">
+                        <div class="form-row-2">
+                            <div class="form-field">
+                                <label class="field-label">Your Name <span class="required">*</span></label>
+                                <input type="text" id="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-field">
+                                <label class="field-label">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" placeholder="example@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label class="field-label">Message <span class="required">*</span></label>
+                            <textarea id="message" rows="6" placeholder="What's on your mind?" required></textarea>
+                        </div>
+                        <button type="submit" class="contact-send-btn">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Minimal Copyright Bar -->
+    <div class="copyright-bar">
+        <p>&copy; 2026 Zahidah Aisyah. All rights reserved.</p>
+    </div>
+
+
+
+    <!-- Scroll to Top -->
+    <button id="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
